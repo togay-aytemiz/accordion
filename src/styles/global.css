@@ -1,0 +1,319 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+.navbar-burger,
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  text-size-adjust: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  color: #4a4a4a;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  color: #485fc7;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a strong {
+  color: currentColor;
+}
+
+a:hover {
+  color: #363636;
+}
+
+code {
+  color: #da1039;
+  font-size: 0.875em;
+  font-weight: 400;
+  padding: 0.25em 0.5em;
+}
+
+code,
+hr {
+  background-color: #f5f5f5;
+}
+
+hr {
+  border: none;
+  display: block;
+  height: 2px;
+  margin: 1.5rem 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: initial;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+strong {
+  color: #363636;
+  font-weight: 700;
+}
+
+fieldset {
+  border: none;
+}
+
+table td,
+table th {
+  vertical-align: top;
+}
+
+table td:not([align]),
+table th:not([align]) {
+  text-align: inherit;
+}
+
+table th {
+  color: #363636;
+}
+
+
+main {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  /* overflow:hidden; */
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #EBDEF0;
+  color: #633974;
+  font-weight: 700;
+  transition: background-color 0.1s ease-in-out;
+}
+
+button:hover {
+  background-color: #9B59B6;
+  color: white;
+  cursor: pointer;
+}
+
+.question {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-wrap: wrap;
+  /* max-width: 80%; */
+  
+}
+
+.question-wrapper {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: max(90%, 700px);
+  gap: 0.5rem;
+  transition: 0.5s ease-in-out;
+}
+
+.question-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: max(90%, 700px) */
+  width: 100%;
+  
+}
+
+.answer {
+  max-width: 600px;
+  transition: max-height 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .question-wrapper {
+    width: max(90%, 450px);
+  }
+
+  .question {
+    font-size: 1.2rem;
+  }
+}
+
+.icon {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+}
+
+.question-wrapper:hover {
+  cursor: pointer;
+  /* background-color: rgb(233, 238, 253) */
+}
+
+.question:hover {
+  background: -webkit-linear-gradient(90deg, rgba(89, 131, 252, 1) 0%, rgba(41, 53, 86, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.faq-title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(90deg, rgba(89, 131, 252, 1) 0%, rgba(41, 53, 86, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html {
+  background-color: #f5f5f5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
