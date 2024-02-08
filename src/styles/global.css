@@ -233,7 +233,7 @@ button:hover {
   font-size: 1.5rem;
   font-weight: bold;
   text-wrap: wrap;
-  /* max-width: 80%; */
+  max-width: 80%;
   transition: 0.5s ease-in-out;
 
   
@@ -265,7 +265,7 @@ button:hover {
 }
 
 .answer {
-  max-width: 600px;
+  max-width: 550px;
   transition: max-height 0.3s ease-out;
 }
 
